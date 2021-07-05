@@ -14,6 +14,9 @@ function roboger(userInput) {
   const exceptionArray = inputArray.map (function(userInput) {
     if (userInput.includes("3") === true) {
       return userInput = "Won't you be my neighbor?";
+    } else if (userInput.includes("2") === true) {
+      return userInput = "Boop!";
+    }
   });
 
 }
