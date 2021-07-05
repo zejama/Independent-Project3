@@ -21,8 +21,8 @@ function roboger(usersInput) {
       return userInput;
     }
   });
-  const combineOutputs = exceptionArray.join(", ");
-  return combineOutputs;
+  // const combineOutputs = exceptionArray.join(", ");
+  // return combineOutputs;
 
 };
 
