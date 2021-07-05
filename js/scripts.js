@@ -7,6 +7,11 @@ function roboger(userInput) {
     numArray.push(i)
   }
 
+  const inputArray = numArray.map(function(num) {
+    return num;
+  });
+
+  const 
 
 }
 
