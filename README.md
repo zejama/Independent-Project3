@@ -42,14 +42,17 @@ _{Add your contact information here.}_
 ## Tests:
 _Describe: roboger()_
 
-_Test: "The program outputs an array with 0 if the user inputs 0"_
-_Expect(roboger(0).toEqual([0]));_
+_Test: "The program outputs the user's inputted number as a string
+_Expect(roboger(0).toEqual("0"));_
 
 _Test: "The program outputs "Won't you be my neighbor?" when the user's input includes the number 3"_
-_Expect(roboger(3).toEqual(["Won't you be my neighbor?"]));_
+_Expect(roboger(3).toEqual("Won't you be my neighbor?"));_
 
 _Test: "The program outputs "Boop!" when the user's input includes the number 2"_
-_Expect(roboger(2).toEqual(["Boop!"]));_
+_Expect(roboger(2).toEqual("Boop!"));_
 
 _Test: "The program outputs "Beep!" when the user's input includes the number 1"_
-_Expect(roboger(1).toEqual(["Beep!"]));_
+_Expect(roboger(1).toEqual("Beep!"));_
+
+_Test: "The program will prioratize the output for number 3 first then 2 then 1_
+_Expect(roboger(13).toEqual("0", "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop", "Won't you be my neighbor?"));_
