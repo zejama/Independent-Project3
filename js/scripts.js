@@ -1,8 +1,8 @@
 //Business Logic
 
-function roboger(usersInput) {
+function roboger(userInput) {
   let numArray = [];
-  numInput = parseInt(usersInput);
+  numInput = parseInt(userInput);
   for (let i = 0; i <= numInput; i++) {
     numArray.push(i)
   }
@@ -10,28 +10,28 @@ function roboger(usersInput) {
     return num.toString();
   });
   
-  const exceptionArray = inputArray.map (function(userInput) {
-    if (userInput.includes("3") === true) {
-      return userInput = "Won't you be my neighbor?";
-  } else if (userInput.includes("2") === true) {
-      return userInput = "Boop!";
-  } else if (userInput.includes("1") === true) {
-      return userInput = "Beep!";
+  const exceptionArray = inputArray.map (function(userInputtedNum) {
+    if (userInputtedNum.includes("3") === true) {
+      return userInputtedNum = "Won't you be my neighbor?";
+  } else if (userInputtedNum.includes("2") === true) {
+      return userInputtedNum = "Boop!";
+  } else if (userInputtedNum.includes("1") === true) {
+      return userInputtedNum = "Beep!";
   } else {
-      return userInput;
+      return userInputtedNum;
     }
   });
-  // const combineOutputs = exceptionArray.join(", ");
-  // return combineOutputs;
+      const combineOutputs = exceptionArray.concat(" , ");
+      return combineOutputs;
 
 };
 
-
 //User Interface Logic
 $(document).ready(function() {  
-  $("#userInput").submit(function(event) {
+  $("form#userInput").submit(function(event) {
     event.preventDefault();
     const numInput = $("input#input1").val();
-    $("div#output").show (roboger(userInput))
+    $("#output").show();
+    $("#output").text(roboger(numInput))
   });
 });
