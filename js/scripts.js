@@ -16,7 +16,9 @@ function roboger(userInput) {
       return userInput = "Won't you be my neighbor?";
     } else if (userInput.includes("2") === true) {
       return userInput = "Boop!";
-    }
+    } else if (userInput.includes("1") === true) {
+      return userInput = "Beep!";
+    } 
   });
 
 }

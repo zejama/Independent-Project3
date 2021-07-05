@@ -50,3 +50,6 @@ _Expect(roboger(3).toEqual(["Won't you be my neighbor?"]));_
 
 _Test: "The program outputs "Boop!" when the user's input includes the number 2"_
 _Expect(roboger(2).toEqual(["Boop!"]));_
+
+_Test: "The program outputs "Beep!" when the user's input includes the number 1"_
+_Expect(roboger(1).toEqual(["Beep!"]));_
