@@ -45,4 +45,6 @@ _Describe: roboger()_
 _Test: "The program outputs an array with 0 if the user inputs 0"_
 _Expect(roboger(0).toEqual([0]);_
 
-_Test: ""
+_Test: "The program outputs "Won't you be my neighbor?" when the user's input includes the number 3"_
+_Expect(roboger(3).toEqual(["Won't you be my neighbor?"])_
+

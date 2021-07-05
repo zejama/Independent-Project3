@@ -8,10 +8,13 @@ function roboger(userInput) {
   }
 
   const inputArray = numArray.map(function(num) {
-    return num;
+    return num.toString();
   });
 
-  const 
+  const exceptionArray = inputArray.map (function(userInput) {
+    if (userInput.includes("3") === true) {
+      return userInput = "Won't you be my neighbor?";
+  });
 
 }
 
