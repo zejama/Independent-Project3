@@ -1,6 +1,14 @@
 //Business Logic
 
-function 
+function roboger(userInput) {
+  const numArray = [];
+  numInput = parseInt(userInput);
+  for (let i = 0; i <= numInput; i++) {
+    numArray.push(i)
+  }
+
+
+}
 
 
 
@@ -9,7 +17,7 @@ function
 
 
 //User Interface Logic
-$(document).ready(function() { 
+$(document).ready(function() {  
   $("userInput").submit(function(event) {
     event.preventDefault();
 

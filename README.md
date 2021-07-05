@@ -40,5 +40,6 @@ _{Add your contact information here.}_
 
 
 ## Tests:
-
-
+_Describe: roboger()_
+_Test: "The program outputs an array with 0 if the user inputs 0"_
+_Code:  
