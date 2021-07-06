@@ -21,7 +21,7 @@ function roboger(userInput) {
       return userInputtedNum;
     }
   });
-      const combineOutputs = exceptionArray.concat(" , ");
+      const combineOutputs = exceptionArray.join(" , ");
       return combineOutputs;
 
 };
@@ -31,7 +31,7 @@ $(document).ready(function() {
   $("form#userInput").submit(function(event) {
     event.preventDefault();
     const numInput = $("input#input1").val();
+    $("#output").text(roboger(numInput));
     $("#output").show();
-    $("#output").text(roboger(numInput))
-  });
+});
 });

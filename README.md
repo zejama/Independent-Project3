@@ -1,43 +1,62 @@
-# _{Application Name}_
+# _Mr. Roboger's Neighborhood_
 
-#### _{Brief description of application}_
+#### _This webpage allows the user to input any number and outputs the inputted number as a string_
 
-#### By _**{List of contributors}**_
+#### By _**Zeinab Jama**_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Javascript_
+* _jQuery_
+* _Git_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This webpage allows the user to input any number and outputs a range of numbers from 0 to the user inputted number. When the user inputs numbers that contain 1 it will be replaced with "Beep!". when the user inputs numbers that contain 2 it will be replaced with "Beep!". when the user inputs numbers that contain 3 it will be replaced with "Won't you be my neighbor?". The exceptions mentioned above are mentioned from least to most important. For example the number 32 should be replaced with "Won't you be my neighbor?" and the number 12 should be replaced with "Boop!". The user can enter as many new values as they like without refreshing the page and the program will give a new output._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repository. To clone using HTTPS, click on the green download button above the list of files and click on the clipboard icon to save the repository URL._
+[![Clone button](img/clone.png)](#)
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _Open your terminal and navigate into your desktop directory_
+* _Type `git clone` and paste the url of the repository_
+* _Press Enter_
+* _Navigate to your desktop folder on your device and click the `index.html` file on your browser._
+* _Once you open the webpage you can begin entering numbers into the text box and press enter to get an output
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs_
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_MIT License
+Copyright (c) 2021 Zeinab Jama
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE._
 
 ## Contact Information
 
-_{Add your contact information here.}_
-
+_Please contact me at zejama99@gmail.com if you have any further questions about this webpage._
 
 ## Tests:
 _Describe: roboger()_
@@ -46,13 +65,13 @@ _Test: "The program outputs the user's inputted number as a string
 _Expect(roboger(0).toEqual("0"));_
 
 _Test: "The program outputs "Won't you be my neighbor?" when the user's input includes the number 3"_
-_Expect(roboger(3).toEqual("Won't you be my neighbor?"));_
+_Expect(roboger(3).toEqual("0, Beep!, Boop!, Won't you be my neighbor?"));_
 
 _Test: "The program outputs "Boop!" when the user's input includes the number 2"_
-_Expect(roboger(2).toEqual("Boop!"));_
+_Expect(roboger(2).toEqual("0, Beep! Boop!"));_
 
 _Test: "The program outputs "Beep!" when the user's input includes the number 1"_
-_Expect(roboger(1).toEqual("Beep!"));_
+_Expect(roboger(1).toEqual("0, Beep!"));_
 
 _Test: "The program will prioratize the output for number 3 first then 2 then 1_
-_Expect(roboger(13).toEqual("0", "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop", "Won't you be my neighbor?"));_
+_Expect(roboger(13).toEqual(0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop, Won't you be my neighbor?));_
